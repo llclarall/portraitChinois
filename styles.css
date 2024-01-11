@@ -1,0 +1,512 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* j'utilise un écran plus grand que 1280px donc j'ai mis en commentaire pour pouvoir travailler normalement le temps que je finisse*/
+
+/* @media screen and (min-width: 768px) and (max-width: 1280px) { */
+
+
+html {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* début page d'accueil */
+.accueil {
+  background-image: url(img/accueil.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+.accueil h1 {
+
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 3%;
+  text-shadow:
+    -2.5px -2.5px 0 rgb(169, 95, 95),
+    2.5px -2.5px 0 rgb(169, 95, 95),
+    -2.5px 2.5px 0 rgb(169, 95, 95),
+    2.5px 2.5px 0 rgb(169, 95, 95);
+  text-transform: uppercase;
+  font-family: 'Rock Salt', cursive, sans-serif;
+  font-size: 4rem;
+}
+
+.accueil p {
+  position: absolute;
+  top: 83%;
+  /* left: 300px;  */
+  font-size: 1.5rem;
+  color: rgb(249, 240, 240);
+  margin-left: 27rem;
+}
+
+.accueil a {
+  position: absolute;
+  top: 91.5%;
+  border: none;
+  background-color: #ffffffcd;
+  font-family: 'Rock Salt', cursive, sans-serif;
+  font-size: small;
+  margin-left: 0.5rem;
+}
+
+.accueil a:hover {
+  background-color: #ffffff79;
+}
+
+.cercle {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 100%;
+  border: white solid 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 0.5s ease-in-out 0ms;
+}
+
+.cercle:hover {
+  background-color: #f8f8f855;
+
+}
+
+hr {
+  color: rgb(169, 95, 95);
+  width: 60%;
+  border: white solid 2px;
+}
+
+
+/* Rotation au survol */
+.rotation-object:hover {
+  animation: whirl 0.7s forwards;
+}
+
+@keyframes whirl {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* début sections */
+
+h2 {
+  color: rgb(169, 95, 95);
+  text-align: center;
+  margin: 0;
+  font-size: 1.9rem;
+  font-family: 'Rock Salt', cursive, sans-serif;
+}
+
+.imgFond {
+  margin: 0;
+  opacity: 0.5;
+  max-width: 100%;
+  height: 100vh;
+  width: 65vw;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  display: flex;
+  /* border-collapse: unset; */
+   /* position: relative; */
+}
+
+img {
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  background-size: cover;
+}
+
+section {
+  height: 100vh;
+  border-collapse: collapse;
+  position: absolute;
+  top: 29%;
+  /* margin: 0; */
+  width: 40rem;
+  max-width: 50%;
+  margin-left: 13%;
+  z-index: 3;
+}
+
+
+
+p {
+  text-align: justify;
+  width: 30em;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Lemonada', cursive, sans-serif;
+  /* text-transform: uppercase; */
+  line-height: 250%;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+
+
+.parent {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin: 0;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 30%, #f375b0 100%);
+  align-items: center;
+  height: 100vh;
+  scroll-snap-align: center;  
+}
+
+
+
+.analogie {
+  font-size: 2rem;
+  background-image: linear-gradient(to right, #7e24cc, #ed94bf);
+  color: transparent;
+  -webkit-background-clip: text;
+  transition: font-size 0.3s ease;
+}
+
+.valeur {
+  font-size: 2.9rem;
+  background-image: linear-gradient(to right, #de7898, #b22a2e);
+  color: transparent;
+  -webkit-background-clip: text;
+  transition: font-size 0.3s ease;
+}
+
+.analogie:hover {
+  font-size: 2.2rem;
+}
+
+.valeur:hover {
+  font-size: 3.2rem;
+}
+
+.container {
+  /* pour le texte à droite */
+  width: 35vw;
+  height: 100vh;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 30%, #df8bb2 100%);
+  background-color: rgb(233, 214, 217);
+  background-position: center;
+  margin: 0;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  align-items: center;
+  height: 100vh; /* Hauteur de chaque section */
+}
+
+
+/* début formulaire */
+
+form {
+  max-width: 60%;
+  margin: 0 auto;
+  float: center;
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 30%;
+  margin: auto;
+  padding: 16px;
+
+}
+
+.formulaire {
+  background-image: url(img/accueil.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;  
+  scroll-snap-align:center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: 'Rock Salt', cursive, sans-serif;
+}
+
+input {
+  border-radius: 13px;
+}
+
+input[type="text"],
+textarea,
+input[type="email"],
+input[type="url"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 13px;
+  border: 1px solid #ccc;
+}
+
+
+input[type="button"] {
+  box-shadow: 0px 0px 20px -20px;
+  background: rgba(255, 255, 255, 0.65);
+  transition: all 0.2s ease-in-out 0ms;
+  user-select: none;
+  font-family: 'Rock Salt', cursive, sans-serif;
+  border-radius: 15px;
+  border: none;
+  padding: 10px 15px 10px 15px;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background-color: rgb(54, 53, 53);
+  box-shadow: 0px 0px 20px -18px;
+  color: white;
+}
+
+input[type="button"]:active {
+  transform: scale(0.95);
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+  width: fit-content;
+  margin-left: 30px;
+  border: #df8bb2 solid 4px;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 100px;
+  float: left;
+  transition: all 0.3s ease-in-out 0ms;
+}
+
+fieldset {
+  padding: 40px;
+  padding-bottom: 10px;
+  border-radius: 30px;
+  background-color: #e2b2c9c7;
+  border: none;
+}
+
+
+
+/* début boutons haut de page */
+.topp {
+  font-size: 0.9rem;
+  border: none;
+}
+
+.topp:hover {
+  background-color: #ffffffb2;
+}
+
+.haut {
+  border: none;
+  background-color: #ffffffcd;
+  font-family: 'Rock Salt', cursive, sans-serif;
+  font-size: large;
+  border-radius: 150%;
+  width: 3%;
+  height: 6.3%;
+  position: fixed;
+  float: right;
+  right: 4%;
+  bottom: 7%;
+}
+
+.haut:hover {
+  background-color: #ffffff79;
+}
+
+
+/* début bouton sections */
+.fleches {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 70%;
+  position: fixed;
+  bottom: 14%;
+  left: 2%;
+}
+
+.fleche {
+  width: 3rem;
+  height: 3rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 15px;
+  text-decoration: none;
+  font-family: 'Rock Salt', cursive, sans-serif;
+  display: flex;
+}
+
+
+.fleche:hover {
+  /* Style de la flèche au survol */
+  background-color: #ffffff9a;
+  cursor: pointer;
+}
+
+/* début personnalisation sections */
+@keyframes deplacement {
+  0% {
+    background-position: 0 0; /* Position initiale du dégradé en haut */
+  }
+  50% {
+    background-position: 0 100%; /* Position finale du dégradé en bas */
+  }
+  100% {
+    background-position: 0 0; /* Position initiale du dégradé en haut */
+  }
+
+  
+
+}#section1 {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 30%, #c75a5a 100%);
+  background-size: 100% 200%; 
+  animation: deplacement 5s linear infinite; 
+  overflow: hidden;
+  
+}
+
+#section1 h2 {
+  margin-top: 8%;
+}
+
+#section2 {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 30%, #d39a4a 100%);
+  background-size: 100% 200%; 
+  animation: deplacement 3s linear infinite; 
+  overflow: hidden;
+}
+
+#section2 h2 {
+  margin-top: 15%;
+}
+
+#section3 {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 30%, #d2c554 100%);
+  background-size: 100% 200%; 
+  animation: deplacement 3s linear infinite; 
+  overflow: hidden;
+}
+
+#section3 h2 {
+  margin-top: 15%;
+}
+
+#section4 {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 30%, #88d883 100%);
+  background-size: 100% 200%; 
+  animation: deplacement 3s linear infinite; 
+  overflow: hidden;
+}
+
+#section4 h2 {
+  margin-top: 13%;
+}
+
+#section5 {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 30%, #6687c3 100%);
+  background-size: 100% 200%; 
+  animation: deplacement 3s linear infinite; 
+  overflow: hidden;
+}
+
+#section5 h2 {
+  margin-top: 12%;
+}
+
+#section6 {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 30%, #a765cd 100%);
+  background-size: 100% 200%; 
+  animation: deplacement 3s linear infinite; 
+  overflow: hidden;
+}
+
+#section6 h2 {
+  margin-top: -10%;
+}
+
+#section7 {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 30%, #c25c8d 100%);
+  background-size: 100% 200%; 
+  animation: deplacement 3s linear infinite; 
+  overflow: hidden;
+}
+
+#section7 h2 {
+  margin-top: -1%;
+}
+
+/* début pied de page */
+footer {
+  margin-top: 0;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: rgb(169, 95, 95);
+  color: white;
+  width: 100%;
+  font-family: 'Rock Salt', cursive, sans-serif;
+  scroll-snap-align: start;
+}
+
+footer h1 {
+  margin: 0;
+  float: right;
+  margin-right: 2rem;
+  font-size: 1.1rem;
+  padding: 5px;
+  transition: font-size 0.3s ease;
+}
+
+footer h1:hover {
+  cursor: pointer;
+  font-size: 1.15rem;
+}
+
+footer p {
+  width: 35%;
+}
+
+
+
+/* } */
+
