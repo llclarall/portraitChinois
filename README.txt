@@ -6,9 +6,15 @@ https://docs.google.com/spreadsheets/d/11vxXDrPTrb9aFpLMQT1-rDp_hkPdSxOKJkQrfB2N
 
 -----------------------------------------------------------------------
 
-Lien de mon site : 
+Lien de mon site (UGE) : 
 
 https://etudiant.u-pem.fr/~clara.moubarak/portrait%20chinois/PORTRAIT_CHINOIS_CLARA/
+
+-------------------------------------------------------------------------
+
+Lien GitHub : 
+
+https://llclarall.github.io/Portrait_Chinois_Clara/
 
 --------------------------------------------------------------------------
 
@@ -26,6 +32,4 @@ Pour l'héberger, il a fallu installer Filezilla, puis se connecter en mettant s
 J'ai ensuite déposer mon dossier PORTRAIT_CHINOIS_CLARA dans le dossier WWW de pour le placer dans le portail de l'université.
 Ensuite, il suffisait de taper dans le navigateur le lien de mon site : https://etudiant.u-pem.fr/~clara.moubarak/portrait%20chinois/PORTRAIT_CHINOIS_CLARA/
 
--------------------------------------------------------------------------
 
-[Portrait_Chinois_Clara](https://github.com/llclarall/Portrait_Chinois_Clara.git)
