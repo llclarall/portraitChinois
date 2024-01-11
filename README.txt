@@ -25,3 +25,7 @@ sous dossiers de XAMPP.
 Pour l'héberger, il a fallu installer Filezilla, puis se connecter en mettant son nom d'utilisateur et mot de passe étudiant.
 J'ai ensuite déposer mon dossier PORTRAIT_CHINOIS_CLARA dans le dossier WWW de pour le placer dans le portail de l'université.
 Ensuite, il suffisait de taper dans le navigateur le lien de mon site : https://etudiant.u-pem.fr/~clara.moubarak/portrait%20chinois/PORTRAIT_CHINOIS_CLARA/
+
+-------------------------------------------------------------------------
+
+[Portrait_Chinois_Clara](URL_du_dépôt)
