@@ -28,4 +28,4 @@ Ensuite, il suffisait de taper dans le navigateur le lien de mon site : https://
 
 -------------------------------------------------------------------------
 
-[Portrait_Chinois_Clara](URL_du_dépôt)
+[Portrait_Chinois_Clara](https://github.com/llclarall/Portrait_Chinois_Clara.git)
