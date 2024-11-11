@@ -14,7 +14,7 @@ https://etudiant.u-pem.fr/~clara.moubarak/portrait%20chinois/PORTRAIT_CHINOIS_CL
 
 Lien GitHub : 
 
-https://llclarall.github.io/Portrait_Chinois_Clara/
+https://llclarall.github.io/portraitChinois/
 
 --------------------------------------------------------------------------
 
